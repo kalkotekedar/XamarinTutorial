@@ -20,3 +20,21 @@ __Portable Class Libraries(PCLs)__ attempt to address this problem by creating a
 ### Installing Xamarin
 ### Pages, Controls and Layout
 ### Using platform-specific features
+
+
+## [Introduction to Xamarin.Forms](https://www.youtube.com/playlist?list=PLZ91tJK_p9B6q-qOBLIk4BhjZSfBxMQm8)
+##### There are two common approaches to using Xamarin to build mobile applications:
+1. The traditional approach where we share primarily business logic and data structures.
+2. The Xamarin.Forms approach where we also share the business logic and data structures, but also define the UI using a common set of platform-independent controls - allowing us to also share the UI design.
+Let's explore this in a bit more detail together.
+
+##### In Xamarin.forms, remember that each of our applications is made from two components:
+__Shared code(Portable Class Library)__ which holds our logic and UI definition and the __Platform-Specific projects__ which are the actual applications we will deploy to the devices and app stores. The PCL is great because it's shared, but it has significant limitations in terms of the APIs we can use.
+
+Many of the platform features which make iOS, Android, and Windows unique are unavailable to us. Those features are available in the platform-specific projects, but then we have to write the code in a non-shared way and try to find some way to "plug" it into our shared UI.
+
+## [Consuming REST-based Web Services](https://www.youtube.com/playlist?list=PLZ91tJK_p9B5lvSq3Iq3z_PUO_kVFeA2R)
+#### Obtain the device's network capabilities
+#### Introduction to REST
+#### Consuming REST services with Xamarin
+#### Integrating with the platform
