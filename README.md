@@ -14,6 +14,16 @@ When you add a reference to a shared project, the compiler and build tools will 
 ### Using Portable Class Libraries
 __Portable Class Libraries(PCLs)__ attempt to address this problem by creating a library that is capable of running on multiple .NET platforms (Xamarin.iOS, Xamarin.Android, Windows, etc.). They provide a more structured container for sharing code which is not tied to a specific runtime but also require more architecture and thought when using platform-specific features. Let's take a closer look at how these work.
 
+When you run into a situation where you need to use a platform-specific feature from your shared code, you will need to create an abstraction over the feature. Before you go through that effort however, you should look to see if an abstraction already exists. Here are some good places to look:
+
+- [Xamarin.Social](https://github.com/xamarin/Xamarin.Social) The Xamarin.Social component provides an abstraction for popular social networking frameworks such as Facebook and Twitter.
+- [Xamarin.Auth](https://github.com/xamarin/Xamarin.Auth)	Xamarin.Auth provides a cross-platform implementation for client-side OAuth interactions.
+- [Xamarin.Mobile](https://github.com/xamarin/Xamarin.Mobile)	Xamarin.Mobile provides an abstraction for common mobile services such as the camera.
+- [Open source plugins](https://github.com/xamarin/XamarinComponents)	A big list of community-created cross-platform plug-ins.
+- [.NET Foundation](https://dotnetfoundation.org/)	The .NET Foundation has a bunch of open-source code.
+- [NuGe](https://www.nuget.org/)t	NuGet is the place to find shared binary components
+- [Xamarin Component Store](https://components.xamarin.com/)	The Xamarin component store has some commercial binary components.
+
 
 ## [Introduction to Xamarin](https://www.youtube.com/playlist?list=PLZ91tJK_p9B6q-qOBLIk4BhjZSfBxMQm8)
 ### What is Xamarin.Forms?
@@ -34,7 +44,7 @@ __Shared code(Portable Class Library)__ which holds our logic and UI definition 
 Many of the platform features which make iOS, Android, and Windows unique are unavailable to us. Those features are available in the platform-specific projects, but then we have to write the code in a non-shared way and try to find some way to "plug" it into our shared UI.
 
 ## [Consuming REST-based Web Services](https://www.youtube.com/playlist?list=PLZ91tJK_p9B5lvSq3Iq3z_PUO_kVFeA2R)
-#### Obtain the device's network capabilities
-#### Introduction to REST
-#### Consuming REST services with Xamarin
-#### Integrating with the platform
+- Obtain the device's network capabilities
+- Introduction to REST
+- Consuming REST services with Xamarin
+- Integrating with the platform
