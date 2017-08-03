@@ -1,0 +1,2 @@
+E:\Xamrin Apps\XamarinTutorial\Calculator\Calculator.UWP\Calculator.UWP.csproj;x86
+E:\Xamrin Apps\XamarinTutorial\Calculator\Calculator\Calculator.csproj;neutral
