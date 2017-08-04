@@ -43,8 +43,18 @@ __Shared code(Portable Class Library)__ which holds our logic and UI definition 
 
 Many of the platform features which make iOS, Android, and Windows unique are unavailable to us. Those features are available in the platform-specific projects, but then we have to write the code in a non-shared way and try to find some way to "plug" it into our shared UI.
 
+## [Resources and Styles in Xamarin.Forms](https://www.youtube.com/playlist?list=PLZ91tJK_p9B75AFpG2WBmJfXf19pwNfbg)
+In these video, we will explore how to use static resiurce in XAML
+- Avoid duplicate XAML with Resources
+- Create consistent UI with Styles
+- Make your Resources and Styles available across your entire app
+- Apply the user's accessibility choices with built-in Styles
+
+
 ## [Consuming REST-based Web Services](https://www.youtube.com/playlist?list=PLZ91tJK_p9B5lvSq3Iq3z_PUO_kVFeA2R)
+In these video, we will explore REST-Based web request, making HTTP request and handeling data
 - Obtain the device's network capabilities
 - Introduction to REST
 - Consuming REST services with Xamarin
 - Integrating with the platform
+
