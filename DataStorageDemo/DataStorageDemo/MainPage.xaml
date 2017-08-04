@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DataStorageDemo"
+             x:Class="DataStorageDemo.MainPage"
+             Title="Data Storage Demo">
+    <StackLayout
+        Orientation="Vertical"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        Padding="10"
+        Spacing="20">
+        
+        <Label Text="The local file path is" HorizontalTextAlignment="Center" 
+               TextColor="DarkOliveGreen" FontAttributes="Bold" FontSize="Large"/>
+
+        <Label Text="" x:Name="pathLocation" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Blue"/>
+
+        <Button Text="See SQLite Demo" Clicked="OpenSqliteDemo" Style="{StaticResource RedButton}"/>
+    </StackLayout>
+</ContentPage>
