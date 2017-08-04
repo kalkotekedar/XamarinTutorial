@@ -1,6 +1,8 @@
 # XamarinTutorial
 
 ## [Introduction to Cross-Platform](https://www.youtube.com/playlist?list=PLZ91tJK_p9B7nppFlnwYr0whb521oONRz)
+One of the advantages to using Cross-Platform over the traditional platform-specific approach is the level of code-sharing you can achieve across iOS, Android and Windows. In this tutorial, we will explore two ways to structure your shared code - Portable Class Libraries (PCLs) and Shared Projects.
+
 ### Using Shared Projects
 __Shared Projects__, sometimes referred to as "Shared Application Projects" allow you to define a specific project type where the intent is to actually share all of the files in that project with other projects. It acts just like File Linking – except you only have to add one reference to your target to get all of the files added.
 The IDE then treats all the files and assets included in the shared project as if they were part of each of your platform projects. In addition, because the IDE knows about the relationships, all the normal refactoring and navigation tools should work just fine.
@@ -26,10 +28,10 @@ When you run into a situation where you need to use a platform-specific feature 
 
 
 ## [Introduction to Xamarin](https://www.youtube.com/playlist?list=PLZ91tJK_p9B6q-qOBLIk4BhjZSfBxMQm8)
-### What is Xamarin.Forms?
-### Installing Xamarin
-### Pages, Controls and Layout
-### Using platform-specific features
+- What is Xamarin.Forms?
+- Installing Xamarin
+- Pages, Controls and Layout
+- Using platform-specific features
 
 
 ## [Introduction to Xamarin.Forms](https://www.youtube.com/playlist?list=PLZ91tJK_p9B6q-qOBLIk4BhjZSfBxMQm8)
@@ -50,6 +52,17 @@ In these video, we will explore how to use static resiurce in XAML
 - Make your Resources and Styles available across your entire app
 - Apply the user's accessibility choices with built-in Styles
 
+## [SQLite and Mobile Data](https://www.youtube.com/playlist?list=PLZ91tJK_p9B5h2GQFPysdWLSZXOqGX4_g)
+In this videos, we will explore how to use SQLite and the SQLite.NET ORM to manage local data in your Xamarin.iOS, Xamarin.Android and Windows applications
+- Data storage options
+- Working with SQLite
+- Working with SQLite asynchronously
+
+In mobile development there are several options when it comes to persisting data within our mobile applications. Depeninding on the different environment the storage type are changed
+1. Preference(Android-SharedPreferences, iOS-NSUserDefaults, Windows-IsolatedStorageSettings/ApplicationDataContainer)
+2. File System
+3. Database
+
 
 ## [Consuming REST-based Web Services](https://www.youtube.com/playlist?list=PLZ91tJK_p9B5lvSq3Iq3z_PUO_kVFeA2R)
 In these video, we will explore REST-Based web request, making HTTP request and handeling data
@@ -58,3 +71,9 @@ In these video, we will explore REST-Based web request, making HTTP request and 
 - Consuming REST services with Xamarin
 - Integrating with the platform
 
+
+### In this repository added some projects which are
+1. XAMLCalculator
+This is the exercise of Resources and Styles in Xamarin.Forms tutorial of the Xamarin University
+2. DataStorageDemo
+This project is the exercise of SQLite and Mobile Data tutorial of the Xamarin University. To compile this you need add a Nuget Package [SQLite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl)
