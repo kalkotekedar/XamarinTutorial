@@ -7,9 +7,9 @@
         <Entry x:Name="NewPerson" Placeholder="Enter Name"/>
         <Label x:Name="statusMessage" HorizontalTextAlignment="Center"/>
 
-        <Button Text="Add Person" Style="{StaticResource RedButton}" Clicked="OnNewButtonClicked"/>
+        <Button Text="Add Person" Style="{StaticResource RedButton}" Clicked="OnNewButtonClickedAsync"/>
         
-        <Button Text="Get All Persons" Style="{StaticResource RedButton}" Clicked="OnGetButtonClicked"/>
+        <Button Text="Get All Persons" Style="{StaticResource RedButton}" Clicked="OnGetButtonClickedAsync"/>
 
         <ListView x:Name="PersonList">
             <ListView.ItemTemplate>
