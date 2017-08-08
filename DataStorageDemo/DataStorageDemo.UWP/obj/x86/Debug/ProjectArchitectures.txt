@@ -1,1 +1,0 @@
-E:\Xamrin Apps\XamarinTutorial\DataStorageDemo\DataStorageDemo.UWP\DataStorageDemo.UWP.csproj;x86
